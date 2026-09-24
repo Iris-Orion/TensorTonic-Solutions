@@ -6,4 +6,5 @@ def relu(x) -> np.ndarray:
     """
     # Write code here
     x_arr = np.asarray(x, dtype=float)
-    return np.where(x_arr>0, x_arr, 0.0)
+    return np.asarray(np.maximum(0, x_arr))
+    # return np.where(x_arr>0, x_arr, 0.0)
